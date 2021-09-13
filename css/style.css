@@ -28,7 +28,6 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
 
 }
 
@@ -107,6 +106,9 @@ figcaption{
 	}
 }
 @media screen and (min-width: 1024px){
+	body{
+		height: 100vh;
+	}
 	.topo figure img{
 		display: block;
 		margin: 0 auto 20px 0;
