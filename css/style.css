@@ -20,19 +20,104 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 }
 
 /*BODY*/
-	body{
+body{
+	background-color: #00002e;
+	color: #ffffff;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-	}
+}
 
 /*TOPO*/
-	header.topo{
-		
-	}
+
 
 /*RODAPÉ*/
-	
+
+footer button{
+	width: 200px;
+	background-color: #00002e;
+	color: #ffffff;
+	border: #ffffff 1px solid;
+	margin: 20px auto 50px auto;	
+	padding: 20px;
+	font-size: 1rem;
+	cursor: pointer;
+}
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+.pg-home{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.pg-home header h2{
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-top: 8px;
+	margin-bottom: 26px;
+}
+
+.pg-home ul li{
+	width: 186px;
+	margin-bottom: 10px;
+	font-size: 1.3rem;
+}
+
+.pg-home ul li img{
+	margin: 10px 0;
+}
+
+figcaption{
+	display: none;
+}
+.flex{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+.flex__item{
+	color: #bbbbbb;
+}
+.flex__item img{
+	width: 160px;
+}
+
+.flex__item img:hover{
+	width: 158px;
+	border:#ffffff 2px solid;
+}
+.flex__item:hover{
+	color: #ffffff;
+}
+
+.pg-home ul .addPerfil img{
+	width: 100px;
+	margin: 42px auto;
+}
+
+@media screen and (min-width: 550px) and (max-width: 800px){
+	.pg-home ul{
+		width: 500px;
 	}
+}
+@media screen and (min-width: 1024px){
+	.topo figure img{
+		display: block;
+		margin: 0 auto 20px 0;
+	}
+	.pg-home ul{
+		width: 858px;
+	}
+	.pg-home header h2{
+		font-size: 2.5rem;
+		margin-bottom: 80px;
+	}
+	footer button{
+		margin-top: 50px;
+	}
+}
